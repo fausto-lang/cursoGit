@@ -286,3 +286,29 @@ Regresar a develop, realizar pull para asegurar la última versión y fusionar t
 
 ##### Limpieza: 
 Resolver conflictos manualmente si existen, confirmar el commit y eliminar la rama local con git branch -D
+## CLASE 7
+#### Pull Requests (PRs) y Seguridad
+##### Definición: 
+Es la metodología profesional para proponer cambios al código base en plataformas como GitHub, permitiendo la revisión antes de la unión definitiva.  
+##### Importancia y Seguridad:
+Evitan que colaboradores (o agentes externos) integren código malicioso o erróneo sin supervisión.  
+
+Fomentan el debate técnico y la revisión por pares para validar la calidad del código.  
+
+Permiten auditar qué cambios se introducen, quién los hace y por qué.  
+
+##### Flujo de Trabajo con PR:
+
+Actualizar la rama local desde develop.  
+
+Trabajar en la rama propia y sincronizarla con los últimos cambios de develop antes de subirla.  
+
+Realizar 
+```
+git push origin rama.  
+```
+
+Crear formalmente el Pull Request en la interfaz de GitHub para solicitar la revisión y posterior fusión.  
+
+##### Protección del Repositorio: 
+Se recomienda configurar reglas en GitHub para limitar la colaboración directa y obligar a que todo cambio pase por una aprobación (review) previa
