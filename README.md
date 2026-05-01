@@ -79,12 +79,11 @@ git reset --soft HEAD~1
 Aquí usaremos los commits atómicos. Son una práctica en Git donde cada confirmación (commit) representa un único cambio lógico, pequeño y completo en el código fuente.
 Pero esto no significa hacer commits sin sentido
 1.Usa verbos imperativos (Add, Change, Fix, Remove)
-            ```
             Add: Significa que se añade un nuevo archivo.
             Change: Significa que se modifica un archivo existente.
             Fix: Significa que se arregla un bug.
             Remove: Significa que se elimina un archivo existente.
-            ```
+            
 2.No uses punto final ni puntos suspensivos en tus mensajes
 3.Usa como máximo 50 caracteres
             Se corto y conciso.
@@ -107,7 +106,57 @@ Pero esto no significa hacer commits sin sentido
 
 5.Añade todo el contexto que se necesario en el cuerpo del commit
 
-# justificacion de inasistencia 
+#### justificacion de inasistencia 
 Por un descuido no pude llenar el form del dia martes 21/04, fue por que estaba atendiendo la clase y no me fije el chat del MEET
 
+## CLASE 3
+### Guía Rápida: Git y GitHub
 
+Git: Sistema de control de versiones que crea "puntos de guardado" locales.
+
+GitHub: Servidor en la nube para alojar y colaborar en proyectos. Aunque usan Git, no son lo mismo.
+
+#### Autenticación (Recomendado: SSH)
+Es preferible usar SSH sobre HTTPS para evitar solicitar credenciales constantemente.
+
+##### Genera tu clave: 
+```
+ssh-keygen -t ed25519 -C "tu-correo@email.com".
+```
+##### Copia la clave 
+```
+(cat ~/.ssh/id_ed25519.pub)
+``` 
+##### Y agrégala en: 
+```
+GitHub > Settings > SSH and GPG keys > New SSH Key.
+```
+
+#### Comandos Esenciales
+##### Clonar un repositorio: 
+```
+git clone <url-ssh>.
+```
+##### Conectar repositorio local existente:
+```
+Bash
+git remote add origin <url-ssh>
+git branch -M main
+git push -u origin main
+```
+###### [Nota: Requiere git init y un commit previo].
+
+#### Cambiar HTTPS a SSH: 
+```
+git remote set-url origin <url-ssh>.
+```
+#### Sincronización:
+
+##### Subir cambios: 
+```
+git push origin <rama>.
+```
+##### Traer cambios: 
+```
+git pull origin <rama>.
+```
