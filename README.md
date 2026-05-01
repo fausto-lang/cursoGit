@@ -198,7 +198,49 @@ Inspeccionar código antiguo, restaurar archivos o experimentar.
 El HEAD apunta a un commit fijo en lugar de a una rama.  
 ###### Riesgo: 
 Los cambios realizados se pierden al volver al presente si no se crea una rama nueva con 
-```git checkout -b <nombre>
+```
+git checkout -b <nombre>
 ```
 ##### Buenas prácticas: 
 Siempre haz commit antes de cambiar de punto en la historia.
+## CLASE 5
+### Gitflow Básico
+#### Gestión de Ramas
+Las ramas permiten bifurcar el estado del código para trabajar en paralelo de forma organizada.
+```
+git branch
+```
+Lista las ramas y muestra la posición del HEAD.
+```
+git branch <nombre>
+```
+Crea una nueva rama desde la posición actual.
+```
+git branch -D <nombre>
+```
+Elimina una rama.
+```
+git checkout <nombre> o git switch <nombre>
+```
+Cambia a la rama especificada. 
+```
+git switch
+```
+Es el comando moderno (desde 2019) especializado exclusivamente en ramas para evitar errores accidentales.
+```
+git checkout -b <nombre>
+```
+Crea una rama y se mueve a ella en un solo paso.
+#### ¿Qué es Gitflow?
+Es un flujo de trabajo que establece reglas para gestionar ramas y versiones de manera ordenada, facilitando la colaboración en equipo.
+#### Tipos de Ramas en Gitflow
+##### main
+Esta presente desde que se crea el repositorio, nunca muere y es donde se guarda el codigo en producción.
+##### develop
+Nace en el main, no muere nunca y es donde se realiza la pre-produccion y el trabajo diario del equipo.
+##### feature/*
+Nace y muere en el develop, en esta rama de generan nuevas caracteristicas y/o tareas especificas.
+##### release/*
+Nace en el develop pero puede morir en el main o en el mismo develop, en esta rama se preparan nuevas versiones y pruebas finales de (QA).
+##### hotfix/*
+Nace y muere en los mismo lugares que el release, pero sirve solo para parches urgentes que reparen errores em produccion.
