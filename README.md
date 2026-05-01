@@ -312,3 +312,41 @@ Crear formalmente el Pull Request en la interfaz de GitHub para solicitar la rev
 
 ##### Protección del Repositorio: 
 Se recomienda configurar reglas en GitHub para limitar la colaboración directa y obligar a que todo cambio pase por una aprobación (review) previa
+## CLASE 8
+### Contribución a Open Source (Flujo CLI)
+#### Fork: 
+El proceso inicia creando una copia personal del repositorio original desde la interfaz de GitHub.  
+
+#### Clonación: 
+Se descarga el fork a la computadora local usando 
+```
+git clone <URL-del-repositorio>
+``` 
+
+#### Ramificación (Branching): 
+Es fundamental no trabajar en la rama main; se debe crear una rama específica 
+```
+ej. docs/ejemplo-video
+``` 
+con: 
+```
+git checkout -b.  
+```
+
+#### Ciclo de Cambio: 
+Tras modificar los archivos, se preparan con 
+```
+git add
+```
+y se registran con:
+``` 
+git commit -m "mensaje".  
+```
+#### Publicación: 
+Se suben los cambios al fork remoto usando 
+```
+git push -u origin <nombre-de-la-rama>
+```  
+
+#### Pull Request (PR): 
+Se utiliza el enlace proporcionado por Git o la interfaz de GitHub para solicitar que los dueños del proyecto original integren tus cambios.
