@@ -160,3 +160,45 @@ git push origin <rama>.
 ```
 git pull origin <rama>.
 ```
+
+## CLASE 4
+### Guía de Git: Remotos, SSH y Checkout
+#### Gestión de Repositorios Remotos
+El comando git remote administra las conexiones con repositorios externos:  
+##### Visualizar URLs:
+```
+git remote -v
+```
+##### Vincular repositorio: 
+```
+git remote add <apodo> <url>
+```
+##### Cambiar URL:
+```
+git remote set-url <apodo> <url>
+```
+#### Configuración de Múltiples Cuentas SSH
+Para manejar varias cuentas (ej. personal y trabajo) sin conflictos, se crean "túneles" específicos:  
+##### Generar llave con nombre único: 
+```
+ssh-keygen -t ed25519 -C "correo@ejemplo.com" -f ~/.ssh/id_nombre
+```
+##### Archivo config: 
+Se define un Host (alias), HostName (github.com), User (siempre git) e IdentityFile (ruta de la llave).  
+##### Clonado: 
+Es vital usar el Host correcto al clonar: 
+```
+git clone git@host-personal:usuario/repo.git
+```
+#### Git Checkout y el Estado "Detached HEAD"
+Permite desplazar el puntero HEAD a puntos específicos de la historia
+##### Uso: 
+Inspeccionar código antiguo, restaurar archivos o experimentar.  
+##### Detached HEAD: 
+El HEAD apunta a un commit fijo en lugar de a una rama.  
+###### Riesgo: 
+Los cambios realizados se pierden al volver al presente si no se crea una rama nueva con 
+```git checkout -b <nombre>
+```
+##### Buenas prácticas: 
+Siempre haz commit antes de cambiar de punto en la historia.
