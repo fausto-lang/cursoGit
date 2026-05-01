@@ -86,12 +86,6 @@ Pero esto no significa hacer commits sin sentido
             Remove: Significa que se elimina un archivo existente.
             ```
 2.No uses punto final ni puntos suspensivos en tus mensajes
-            ```
-            git commit -m “Add new search feature.”  MAL. No uses punto final
-            git commit -m “Fix a problem with topbar..” MAL. No uses puntos suspensivos
-            git commit -m “Change the default system color” BIEN
-            ```
-
 3.Usa como máximo 50 caracteres
             Se corto y conciso.
 4.Usa un prefijo para tus commits para hacerlos más semánticos
@@ -112,13 +106,6 @@ Pero esto no significa hacer commits sin sentido
                 ```
 
 5.Añade todo el contexto que se necesario en el cuerpo del commit
-            
-            ```
-            git commit
-            ```
-
-            prefijo: Titulo de tu commit
-            Cuerpo que describe tu commit 
 
 # justificacion de inasistencia 
 Por un descuido no pude llenar el form del dia martes 21/04, fue por que estaba atendiendo la clase y no me fije el chat del MEET
