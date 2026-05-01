@@ -70,23 +70,27 @@ Usas:
 git commit -m "mensaje descriptivo"
 ```
 Si quieres deshacer el ultimo commit el comando simple es:
-´´´
+```
 git reset --soft HEAD~1
-´´´
+```
 ### COMMITS EN GIT
 
 #### Buenas practicas 
 Aquí usaremos los commits atómicos. Son una práctica en Git donde cada confirmación (commit) representa un único cambio lógico, pequeño y completo en el código fuente.
 Pero esto no significa hacer commits sin sentido
 1.Usa verbos imperativos (Add, Change, Fix, Remove)
+            ```
             Add: Significa que se añade un nuevo archivo.
             Change: Significa que se modifica un archivo existente.
             Fix: Significa que se arregla un bug.
             Remove: Significa que se elimina un archivo existente.
+            ```
 2.No uses punto final ni puntos suspensivos en tus mensajes
+            ```
             git commit -m “Add new search feature.”  MAL. No uses punto final
             git commit -m “Fix a problem with topbar..” MAL. No uses puntos suspensivos
             git commit -m “Change the default system color” BIEN
+            ```
 
 3.Usa como máximo 50 caracteres
             Se corto y conciso.
@@ -118,3 +122,5 @@ Pero esto no significa hacer commits sin sentido
 
 # justificacion de inasistencia 
 Por un descuido no pude llenar el form del dia martes 21/04, fue por que estaba atendiendo la clase y no me fije el chat del MEET
+
+
