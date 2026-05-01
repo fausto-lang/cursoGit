@@ -15,12 +15,17 @@ Git nació en 2005 como una respuesta a las limitaciones de otros sistemas de co
 ### ¿Cómo instalar GIT?
 
 Puedes instalas GIT desde cualquier navegador web y los pasos de instalacion sun depende al Sistema Operativo, ya despues para verificar la correcta instalacion se usa en la terminal el siguiente comando: 
+
+```
 git --version
+```
 
 ### Cnfiguraciones Basicas
 
+```
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@correo.com"
+```
 
 ### Archivo que todo GIT debe tener
 
@@ -40,9 +45,11 @@ Para entender esto iniciemos desde el punto de vista de que GIT tiene un flujo d
 
 Es donde se pueden hacer modificaciones(eliminar,añadir o escribir más codigo), estos archivos estan de manera "física" en la computadora.
 Aqui los archivos estan en modo "Modified"(Modificados) o UNTRACKED(Sin seguimiento), en este modo git sabe que cambiaste algo pero aun no lo tiene "ASEGURADO"
-´´´
+
+```
 git restore <archivo>
-´´´
+```
+
 Esto borra físicamente lo que escribieron
 
 #### Stage Area (Área de Preparación)
@@ -96,9 +103,16 @@ Pero esto no significa hacer commits sin sentido
                 style: para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
                 test: para tests o refactorización de uno ya existente.
             por ejemplo:
+                ```
                 git commit -m “feat: Add new search feature"
+                ```
+
 5.Añade todo el contexto que se necesario en el cuerpo del commit
+            
+            ```
             git commit
+            ```
+
             prefijo: Titulo de tu commit
             Cuerpo que describe tu commit 
 
