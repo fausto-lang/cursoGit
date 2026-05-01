@@ -244,3 +244,45 @@ Nace y muere en el develop, en esta rama de generan nuevas caracteristicas y/o t
 Nace en el develop pero puede morir en el main o en el mismo develop, en esta rama se preparan nuevas versiones y pruebas finales de (QA).
 ##### hotfix/*
 Nace y muere en los mismo lugares que el release, pero sirve solo para parches urgentes que reparen errores em produccion.
+## CLASE 6
+### Operaciones de Integración y Sincronización
+```
+git merge
+```
+Fusiona ramas para unificar el historial de commits.   
+```
+git merge --no-ff
+```
+Obliga a crear un commit de fusión, evitando que se pierda el historial visual de la rama aunque esta sea eliminada.  
+```
+git fetch
+``` 
+Consulta el repositorio remoto para verificar si existen cambios nuevos en la rama actual o sus dependencias.  
+```
+git pull origin <rama>
+```
+Descarga e integra los cambios del repositorio remoto directamente en tu rama local.  
+```
+git push origin <rama>
+```
+Sube tus commits locales al servidor remoto.  
+```
+git push origin <rama> -u
+```
+Se usa en el primer envío para establecer la relación de seguimiento entre la rama local y la remota.  
+
+#### Flujo de Trabajo Estándar
+##### Actualizar base: 
+Desde develop, ejecutar fetch y pull.  
+
+##### Trabajo en rama:
+Crear/cambiar a tu rama y, si hubo cambios en develop, integrarlos con merge.  
+
+##### Subida: 
+Enviar cambios a la rama remota con push.  
+
+##### Integración final:
+Regresar a develop, realizar pull para asegurar la última versión y fusionar tu rama con merge --no-ff.  
+
+##### Limpieza: 
+Resolver conflictos manualmente si existen, confirmar el commit y eliminar la rama local con git branch -D

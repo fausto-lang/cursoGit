@@ -1,0 +1,49 @@
+[33mcommit 491350266109b04528e588be7e7a5292cdd0b62b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 16:07:15 2026 -0400
+
+    docs: add guide on Git branching and Gitflow methodology
+
+[33mcommit c1a73a09a581f9cbb6221b4ea11df2e67b4cfd6f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 15:05:39 2026 -0400
+
+    docs: update README with Git remote, SSH, and checkout guides
+
+[33mcommit e35ea31d3cf55740f81e4026d9bd491d62eb2b49[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 14:48:10 2026 -0400
+
+    docs: update README with Git and SSH configuration guides
+    
+    Updated the documentation to include core concepts of Git vs. GitHub, SSH authentication setup, and essential remote repository commands for better project workflow.
+
+[33mcommit 432eb509c124687d5ce7bf7dbf796d0781b4573c[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 14:30:00 2026 -0400
+
+    docs: fix typos in README.md again
+
+[33mcommit df510249b11689e86555d11677a4b6b008f5bec8[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 14:26:19 2026 -0400
+
+    docs: fix typos in README.md again
+
+[33mcommit 740ec01e5f2ec3a01f64bcfe850f8a91567baaf9[m
+Author: fausto-lang <faustovilches2712@gmail.com>
+Date:   Fri May 1 13:57:35 2026 -0400
+
+    docs: fix typos in README
+
+[33mcommit a7f337fbf7b49c6d6f2fadafc90779e8cc430e1c[m
+Author: Fausto Vilches <faustovilches2712@gmail.com>
+Date:   Wed Apr 22 20:31:24 2026 -0400
+
+    docs: Change documentation of README.md
+
+[33mcommit 015a89aacc78ed99734b30b239e10a9af0f1950e[m
+Author: Fausto Vilches <faustovilches2712@gmail.com>
+Date:   Wed Apr 22 19:47:19 2026 -0400
+
+    docs: Change documentation
